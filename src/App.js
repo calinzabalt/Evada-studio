@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
-import Projects from './components/Projects';
-import Sidebar from './components/Sidebar';
+import Dashboard from './pages/dashboard/Dashboard';
+import Projects from './pages/projects/Projects';
+import Sidebar from './pages/sidebar/Sidebar';
 
 class App extends React.Component {
   render() {
@@ -11,10 +11,10 @@ class App extends React.Component {
         <Router>
           <Sidebar />
           <Switch>
-            <Route path="/dashboard" component={Dashboard}>
+            <Route path="/dashboard">
               <Dashboard />
             </Route>
-            <Route path="/projects" component={Projects}>
+            <Route path="/projects">
               <Projects />
             </Route>
           </Switch>
