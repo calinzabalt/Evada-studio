@@ -11,42 +11,63 @@ class Sidebar extends React.Component{
 						<ul>
 							<li>
 								<div className="icon">
-									<span></span>
-								</div> 
+								<span></span>
+								</div>
+
 								<Link className={"nav-link"} to={"/dashboard"}>
-									Dashboard
+								<span>Dashboard</span>
 								</Link>
 							</li>
+
 							<li>
+								<div className="icon">
+								<span></span>
+								</div>
 								<Link className={"nav-link"} to={"/projects"}>
 									Projects
 								</Link>
 							</li>
+
 							<li>
+							<div className="icon">
+								<span></span>
+								</div>
 								<Link className={"nav-link"} to={"/projects"}>
 									Link One
 								</Link>
 							</li>
 							<li>
+							<div className="icon">
+								<span></span>
+								</div>
 								<Link className={"nav-link"} to={"/projects"}>
 									Link Two
 								</Link>
 							</li>
 							<li>
+							<div className="icon">
+								<span></span>
+								</div>
 								<Link className={"nav-link"} to={"/projects"}>
 									Link Three
 								</Link>
 							</li>
 							<li>
+								<div className="icon">
+								<span></span>
+								</div>
 								<Link className={"nav-link"} to={"/projects"}>
 									Link Four
 								</Link>
 							</li>
 						</ul>
-						<div className="dropdown">
-						<ul>
-							<button className="dropbtn">Tools</button>
-							<div className="dropdown_content">
+						<div className="collapsible_menu">
+							<input type="checkbox" id="menu"></input>
+            				<label for="menu">Tools
+							<span></span>
+							</label>
+							<div className="menu_content">
+							<ul>
 							<li>
 								<Link className={"nav-link"} to={"/projects"}>
 									Projects
@@ -72,8 +93,8 @@ class Sidebar extends React.Component{
 									Link Four
 								</Link>
 							</li>
+							</ul>
 							</div>
-						</ul>
 						<div className="buttons">
 							<button>EXAMPLE 1</button>
 							<button>EXAMPLE 2</button>
