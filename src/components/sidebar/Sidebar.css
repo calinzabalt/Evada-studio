@@ -141,9 +141,6 @@ input:checked + label span:after {
   padding-top: 10px;
 }
 /* Toggle Effect */
-input:checked ~ label {
-  background-image: url();
-}
 input:checked ~ .menu_content {
   max-height: 100%;
 }

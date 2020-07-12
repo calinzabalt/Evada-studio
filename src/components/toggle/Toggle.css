@@ -1,0 +1,20 @@
+.Toggle span{
+    position: absolute;
+    z-index: 999;
+    bottom: 40px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.Toggle span:after{
+    content: "" !important;
+    position: absolute;
+    z-index: 999;
+    background-image: url(../../images/next.svg);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    bottom: 0px;
+    left: -20px;
+    transform: rotate(180deg);
+}
