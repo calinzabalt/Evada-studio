@@ -1,22 +1,22 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import "./Sidebar.css"
+import "./SecondSidebar.css"
 
-class Sidebar extends React.Component{
+class SecondSidebar extends React.Component{
 	render(){
 		return (
 			<div>
-				{this.props.showMenu &&
-			<div className="ev_main_sidebar">
-				<a href="/"><div className="logo"></div></a>
+				{this.props.showSidebar &&
+			<div className="ev_main_second_sidebar">
+			
 				<div className="main_top_links">
 						<ul>
 							<li>
 								<div className="icon">
 								<span></span>
 								</div>
-								<Link className={"nav-links"} to={"/sidebar"} onClick={this.props.toggleSidebar}>
-                					Opennn
+								<Link className={"nav-link"} to={"/dashboard"}>
+								Dashboard
 								</Link>
 							</li>
 
@@ -24,8 +24,8 @@ class Sidebar extends React.Component{
 								<div className="icon">
 								<span></span>
 								</div>
-								<Link className={"nav-link"} to={"/props"}>
-									Sidebar
+								<Link className={"nav-link"} to={"/projects"}>
+									Projects
 								</Link>
 							</li>
 
@@ -33,7 +33,7 @@ class Sidebar extends React.Component{
 							<div className="icon">
 								<span></span>
 								</div>
-								<Link className={"nav-link"} to={"/Sidebar"}>
+								<Link className={"nav-link"} to={"/projects"}>
 									Link One
 								</Link>
 							</li>
@@ -112,4 +112,4 @@ class Sidebar extends React.Component{
 		)
 	}
 }
-export default Sidebar;
+export default SecondSidebar;

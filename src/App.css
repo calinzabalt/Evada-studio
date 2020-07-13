@@ -8,14 +8,20 @@
   text-align: center; 
   height: 80px;
   background: #2c2c2c;
+  z-index: 99;
 }
 
 #app .left_sidebar{
 
 }
 
-#app .content{
+#app .right_sidebar{
+  
+}
 
+#app .content h1{
+  margin-left: 500px;
+  padding: 10px;
 }
 
 

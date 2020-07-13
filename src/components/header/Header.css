@@ -1,0 +1,59 @@
+.head{
+    position: relative;
+    top: 40%;
+    right: 0%;
+}
+.head span{
+    content: "" !important;
+    position: absolute;
+    background-image: url(../../images/notification.svg);
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    top: 0%;
+    right: 2%;
+}
+
+.head span:nth-child(2){
+    content: "" !important;
+    position: absolute;
+    background-image: url(../../images/message.svg);
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    top: 0%;
+    right: 4%;
+}
+
+.head span:nth-child(3){
+    content: "" !important;
+    position: absolute;
+    background-image: url(../../images/person.svg);
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    top: 0%;
+    right: 6%;
+}
+
+.head span:nth-child(4){
+    content: "" !important;
+    position: absolute;
+    background-image: url(../../images/search.svg);
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    top: 0%;
+    right: 8%;
+}
+
+.head span:nth-child(5){
+    content: "" !important;
+    position: absolute;
+    background-image: url(../../images/clock.svg);
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    top: 0%;
+    right: 10%;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 
-class Toggle extends Component {
+class Header extends Component {
   render() {
     return (
             <div className="head">
@@ -15,4 +15,4 @@ class Toggle extends Component {
   }
 }
 
-export default Toggle;
+export default Header;

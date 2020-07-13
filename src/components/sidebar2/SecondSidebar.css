@@ -1,45 +1,35 @@
-.ev_main_sidebar{
+.ev_main_second_sidebar{
     position: absolute;
     width: 250px;
     height: 100%;
-    background: #2c2c2c;
+    background: #ffffff;
     top: 0;
-    left: 0;
+    margin-left: 250px;
+    border-radius: 25px;;
 }
 
-.ev_main_sidebar .logo{
-    position: absolute;
-    background-image: url(../../images/data.svg);
-    background-size: cover;
-    height: 60px;
-    width: 60px;
-    top: 2%;
-    left: 30%;
-    z-index: 999;
-}
-
-.ev_main_sidebar .main_top_links{
+.ev_main_second_sidebar .main_top_links{
     position: relative;
     top: 10%;
 }
 
-.ev_main_sidebar .main_top_links li{
+.ev_main_second_sidebar .main_top_links li{
     list-style-type: none;
     padding-bottom: 20px;
     padding-left: 20px;
 }
 
-.ev_main_sidebar .main_top_links li a{
+.ev_main_second_sidebar .main_top_links li a{
     text-decoration: none;
-    color: white;
+    color: #2c2c2c;
     font-size: 18px;
 }
 
-.ev_main_sidebar .main_top_links .icon{
+.ev_main_second_sidebar .main_top_links .icon{
     position: relative;
 }
 
-.ev_main_sidebar .main_top_links li:first-child span:after{
+.ev_main_second_sidebar .main_top_links li:nth-child(1) span:after{
      content: "" !important;
      position: absolute;
      background-image: url(../../images/project.svg);
@@ -49,7 +39,7 @@
      top: 0%;
      left: -20%;
 }
-.ev_main_sidebar .main_top_links li:nth-child(2) span:after{
+.ev_main_second_sidebar .main_top_links li:nth-child(2) span:after{
   content: "" !important;
   position: absolute;
   background-image: url(../../images/requirement.svg);
@@ -59,7 +49,7 @@
   top: 0%;
   left: -20%;
 }
-.ev_main_sidebar .main_top_links li:nth-child(3) span:after{
+.ev_main_second_sidebar .main_top_links li:nth-child(3) span:after{
   content: "" !important;
   position: absolute;
   background-image: url(../../images/connection.svg);
@@ -69,7 +59,7 @@
   top: 0%;
   left: -20%;
 }
-.ev_main_sidebar .main_top_links li:nth-child(4) span:after{
+.ev_main_second_sidebar .main_top_links li:nth-child(4) span:after{
   content: "" !important;
   position: absolute;
   background-image: url(../../images/insect.svg);
@@ -79,7 +69,7 @@
   top: 0%;
   left: -20%;
 }
-.ev_main_sidebar .main_top_links li:nth-child(5) span:after{
+.ev_main_second_sidebar .main_top_links li:nth-child(5) span:after{
   content: "" !important;
   position: absolute;
   background-image: url(../../images/rich.svg);
@@ -89,7 +79,7 @@
   top: 0%;
   left: -20%;
 }
-.ev_main_sidebar .main_top_links li:nth-child(6) span:after{
+.ev_main_second_sidebar .main_top_links li:nth-child(6) span:after{
   content: "" !important;
   position: absolute;
   background-image: url(../../images/diamond.svg);
@@ -100,19 +90,19 @@
   left: -20%;
 }
 
-.collapsible_menu input[type="checkbox"] {
+.ev_main_second_sidebar .collapsible_menu input[type="checkbox"] {
   opacity: 0;
   visibility: hidden;
 }
 
-.collapsible_menu label{
+.ev_main_second_sidebar .collapsible_menu label{
   position: relative;
-  color: #ffffff;
+  color: #2c2c2c;
   font-size: 18px;
   padding-left: 40px;
 }
 
-.collapsible_menu label span:after{
+.ev_main_second_sidebar .collapsible_menu label span:after{
   content: "" !important;
   position: absolute;
   background-image: url(../../images/white-arrow.png);
@@ -125,7 +115,7 @@
   transform: rotate(270deg);
 }
 
-input:checked + label span:after {
+.ev_main_second_sidebar input:checked + label span:after {
   content: "" !important;
   position: absolute;
   height: 24px;
@@ -135,32 +125,32 @@ input:checked + label span:after {
   transform: rotate(360deg);
 }
 
-.menu_content {
+.ev_main_second_sidebar .menu_content {
   max-height: 0;
   overflow: hidden;
   text-align: left;
   padding-top: 10px;
 }
 /* Toggle Effect */
-input:checked ~ .menu_content {
+.ev_main_second_sidebar input:checked ~ .menu_content {
   max-height: 100%;
 }
 
-.ev_main_sidebar .buttons{
+.ev_main_second_sidebar .buttons{
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-.ev_main_sidebar .buttons button{
+.ev_main_second_sidebar .buttons button{
     width: 80%;
     background-color: transparent;
     border-radius: 20px;
-    border: 1px solid #ffffff;
+    border: 1px solid #171717;
     padding: 10px 20px 10px 20px;
     margin: 5px;
-    color: #ffffff;
+    color: #171717;
 }
 
 
