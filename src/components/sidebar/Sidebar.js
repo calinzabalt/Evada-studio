@@ -1,8 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import SecondToggle from "../second_toggle/Secondtoggle";
+import SecondSidebar from "../sidebar2/SecondSidebar";
 import "./Sidebar.css"
 
 class Sidebar extends React.Component{
+	constructor(props) {
+		super(props);
+		this.state = { showSidebar: false };
+		this.toggleSidebar = this.toggleSidebar.bind(this);
+	  }
+	  toggleSidebar = function() {
+		this.setState({ showSidebar: !this.state.showSidebar });
+	  }
 	render(){
 		return (
 			<div>
@@ -15,9 +25,8 @@ class Sidebar extends React.Component{
 								<div className="icon">
 								<span></span>
 								</div>
-								<Link className={"nav-links"} to={"/sidebar"} onClick={this.props.toggleSidebar}>
-                					Opennn
-								</Link>
+								<SecondToggle toggleSidebar={this.toggleSidebar}/> 
+            					<SecondSidebar showSidebar={this.state.showSidebar}/>
 							</li>
 
 							<li>
